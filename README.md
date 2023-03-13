@@ -22,14 +22,18 @@
 
 ## 4. Notes Alexandre et Pierre
 Nous avons commencé par mettre en place un MQTT client pour transférer les données des capteurs.
+
 Ensuite nous avons mis en place un MQTT serveur pour envoyer les données des capteurs d'une carte à une autre carte d'un autre groupe (BACHELOT et LAYEC).
+
 Puis nous avons utilisé la connexion MQTT mis en place pour transférer 3 données :
 - freq
 - sf
 - sb
+
 Ces données nous ont ensuite servis à mettre en place une communication LoRa entre les 2 cartes. Pour le moment, nous transmettons des données "tests". Le but à l'avenir est d'utiliser LoRa pour envoyer les données nécessaires à une connexion Bluetooth.
 Nous pourrons ensuite mettre en place une connexion Bluetooth entre un client et un serveur Bluetooth.
-Dans les documents que nousa vons rendus vous trouvez :
+
+Dans les documents rendus vous trouverez :
 - MQTT_client_variable : Client MQTT avec des variables pour "freq", "sf", "sb"
 - MQTT_server : Serveur MQTT qui récupère les données du client MQTT
 - MQTT_client_LoRa : Client MQTT qui envoie les données  nécessaires à une connexion LoRa puis via LoRa envoie de données "tests"
