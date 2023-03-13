@@ -20,7 +20,7 @@
 
 ### 3. Refaire la partie cliente pour répondre au bluetooth
 
-## 4. Notes Alexandre et Pierre
+## 4. Notes Alexandre FIANDACA et Pierre JADAUD
 Nous avons commencé par mettre en place un MQTT client pour transférer les données des capteurs.
 
 Ensuite nous avons mis en place un MQTT serveur pour envoyer les données des capteurs d'une carte à une autre carte d'un autre groupe (BACHELOT et LAYEC).
@@ -38,3 +38,5 @@ Dans les documents rendus vous trouverez :
 - MQTT_server : Serveur MQTT qui récupère les données du client MQTT
 - MQTT_client_LoRa : Client MQTT qui envoie les données  nécessaires à une connexion LoRa puis via LoRa envoie de données "tests"
 - MQTT_server_LoRa : Server MQTT qui récupère les données du client pour mettre en place la connexion LoRa. Une fois la connexion LoRa, la carte reçoit les données LoRa.
+- MQTT_server_Bluetooth : Server Bluetooth que nous arrivons à avoir avec l'application BLE Scanner
+- le dossier "ça morche po" : contient le début du fichier Client Bluetooth qui a comme but de se connecter au server Bluetooth
